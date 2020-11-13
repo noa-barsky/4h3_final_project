@@ -1,0 +1,55 @@
+.header img {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    padding:0;
+}
+
+.header {
+    text-align: center;
+    border-width: 1px;
+    border-top-color: #420420;
+    border-bottom-color: #420420;
+    border-left-color: white;
+    border-right-color:white;
+    border-style: solid;
+    /* margin-top: 0.5%; */
+    padding: 0;
+}
+
+.navbar {
+    margin-bottom:2%;
+}
+
+.budget h4 {
+    text-align: center;
+    padding-bottom: 2%;
+    color: #420420;
+}
+.budget h5 {
+    padding-top: 2%;
+    color: #420420;
+}
+
+.budget {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.tips h1 {
+    text-align: center;
+    padding-bottom: 1%;
+    color: #420420;
+}
+
+.goals h1 {
+    text-align: center;
+    padding-bottom: 1%;
+    color: #420420;
+}
+
+.jumbotron{
+    background-color:  #420420 !important; 
+    color: white !important;
+    margin: 7%;
+}
