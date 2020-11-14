@@ -115,7 +115,7 @@
     float: right;
 }
 
-#calendar .event {
+#calendar .event-income {
     clear: both;
     display: block;
     font-size: 13px;
@@ -124,19 +124,36 @@
     margin-top: 40px;
     margin-bottom: 5px;
     line-height: 14px;
-    background: #e4f2f2;
-    border: 1px solid #b5dbdc;
-    color: #009aaf;
+    background: #5ced8f;
+    border: 1px solid #45ad6a;
+    color: #000000;
     text-decoration: none;
 }
 
-#calendar .event-desc {
-    color: #666;
-    margin: 3px 0 7px 0;
-    text-decoration: none;  
+#calendar .event-expense {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #f54242;
+    border: 1px solid #a33131;
+    color: #000000;
+    text-decoration: none;
 }
+
 
 #calendar .other-month {
     background: #f5f5f5;
     color: #666;
+}
+
+.calendar_details {
+    .card;
+    display: none;
+    text-align: center;
+    border: 1px solid #000000;
 }

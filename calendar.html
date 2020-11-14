@@ -26,6 +26,10 @@
         </div>
     </nav>
     <div class="container">
+        <div id="detailsView" class="calendar_details">
+                    <h4 id="detailsTitle" class="card-title">Card title</h4>
+                    <p id="detailsBody" class="card-text">Some example text. Some example </p>
+        </div>
         <div id="calendar-wrap">
             <header>
                 <h1>November 2020</h1>
@@ -42,19 +46,15 @@
                 </ul>
 
                 <ul class="days">
-                    <li class="day">
-                        <div class="date">1</div>                      
+                    <li class="day"onclick="showDetails('1','Rent','$450','0')">
+                        <div class="date">1</div>
+                        <div class="event-expense">
+                            Rent
+                        </div>                       
                     </li>
                     <li class="day">
                         <div class="date">2</div>
-                        <div class="event">
-                            <div class="event-desc">
-                                HTML 5 lecture with Brad Traversy from Eduonix
-                            </div>
-                            <div class="event-time">
-                                1:00pm to 3:00pm
-                            </div>
-                        </div>                      
+                                            
                     </li>
                     <li class="day">
                         <div class="date">3</div>                      
@@ -62,23 +62,21 @@
                     <li class="day">
                         <div class="date">4</div>                      
                     </li>
-                    <li class="day">
-                        <div class="date">5</div>                      
-                    </li>
-
-                    <li class="day">
-                        <div class="date">6</div>                       
-                    </li>
-                    <li class="day">
-                        <div class="date">7</div>
-                        <div class="event">
-                            <div class="event-desc">
-                                Career development @ Community College room #402
-                            </div>
-                            <div class="event-time">
-                                2:00pm to 5:00pm
-                            </div>
+                                         
+                    <li class="day" onclick="showDetails('5','Phone Bill','$85','0')">
+                        <div class="date">5</div>
+                        <div class="event-expense">
+                            Phone Bill
                         </div>                      
+                    </li>
+                    <li class="day" onclick="showDetails('6','Salary','$700','1')">
+                        <div class="date">6</div>
+                        <div class="event-income">
+                            Salary
+                        </div>                      
+                    </li>
+                    <li class="day">
+                        <div class="date">7</div>                  
                     </li>
                 </ul>
 
@@ -98,15 +96,7 @@
                         <div class="date">11</div>                       
                     </li>
                     <li class="day">
-                        <div class="date">12</div>
-                        <div class="event">
-                            <div class="event-desc">
-                                Group Project meetup
-                            </div>
-                            <div class="event-time">
-                                6:00pm to 8:30pm
-                            </div>
-                        </div>                      
+                        <div class="date">12</div>                      
                     </li>
                     <li class="day">
                         <div class="date">13</div>                       
@@ -131,18 +121,17 @@
                     <li class="day">
                         <div class="date">18</div>                      
                     </li>
-                    <li class="day">
-                        <div class="date">19</div><div class="event">
-                            <div class="event-desc">
-                                Board Meeting
-                            </div>
-                            <div class="event-time">
-                                1:00pm to 3:00pm
-                            </div>
+                    <li class="day" onclick="showDetails('19','Car Insurance','$275','0')">
+                        <div class="date">19</div>
+                        <div class="event-expense">
+                            Car Insurance
                         </div>                      
                     </li>
-                    <li class="day">
-                        <div class="date">20</div>                      
+                    <li class="day" onclick="showDetails('20','Salary','$700','1')">
+                        <div class="date">20</div>
+                        <div class="event-income">
+                            Salary
+                        </div>                      
                     </li>
                     <li class="day">
                         <div class="date">21</div>                      
@@ -155,8 +144,11 @@
                     <li class="day">
                         <div class="date">22</div>                      
                     </li>
-                    <li class="day">
-                        <div class="date">23</div>                      
+                    <li class="day" onclick="showDetails('23','Textbook Sale','$80','1')">
+                        <div class="date">23</div>
+                        <div class="event-income">
+                            Textbook Sale
+                        </div>                      
                     </li>
                     <li class="day">
                         <div class="date">24</div>                      
@@ -168,15 +160,7 @@
                         <div class="date">26</div>                      
                     </li>
                     <li class="day">
-                        <div class="date">27</div>
-                        <div class="event">
-                            <div class="event-desc">
-                                Conference call
-                            </div>
-                            <div class="event-time">
-                                9:00am to 12:00pm
-                            </div>
-                        </div>                      
+                        <div class="date">27</div>                      
                     </li>
                     <li class="day">
                         <div class="date">28</div>                      
@@ -190,15 +174,7 @@
                         <div class="date">29</div>                      
                     </li>
                     <li class="day">
-                        <div class="date">30</div>
-                        <div class="event">
-                            <div class="event-desc">
-                                Conference Call
-                            </div>
-                            <div class="event-time">
-                                1:00pm to 3:00pm
-                            </div>
-                        </div>                      
+                        <div class="date">30</div>                    
                     </li>
                     <li class="day other-month">
                         <div class="date">1</div>                      
@@ -216,10 +192,32 @@
                         <div class="date">5</div>                      
                     </li>
                 </ul>
-
             </div><!-- /. calendar -->
         </div><!-- /. wrap -->
     </div>
-
 </body>
+    <script>
+        function showDetails(day,name,amt,income) {
+            var view = document.getElementById("detailsView");
+            var title = document.getElementById("detailsTitle");
+            var text = document.getElementById("detailsBody");
+
+            if (title.innerHTML == "November " + day) {
+                if (view.style.display === "none") {
+                    view.style.display = "block";
+                } else {
+                    view.style.display = "none";
+                } 
+            }
+
+            title.innerHTML = "November " + day;
+            text.innerHTML = name + ": " + amt;
+
+            if (income == "1") {
+                view.style.backgroundColor = "#5ced8f";
+            } else {
+                view.style.backgroundColor = "#f54242";
+            }
+        }
+    </script>
 </html>
