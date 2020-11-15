@@ -37,14 +37,10 @@
                             <th scope="col">Date</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td>Work</td>
-                            <td>$750</td>
-                          </tr>
+                        <tbody id="incomeTable">
                         </tbody>
                     </table>
-                    <button type="button" class="btn btn-info">Add</button>  
+                    <button type="button" class="btn btn-info" onclick="addRow('incomeTable')">Add</button>  
                 </div>
                 <div class="col-6 justify-content-center">
                     <h4>Expenses</h4>
@@ -56,18 +52,14 @@
                             <th scope="col">Date</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td>Groceries</td>
-                            <td>$85</td>
-                          </tr>
+                        <tbody id="expenseTable">
                         </tbody>
                     </table>
-                    <button type="button" class="btn btn-info">Add</button>  
+                    <button type="button" class="btn btn-info" onclick="addRow('expenseTable')">Add</button>  
                 </div>
                 </div>
                 <h5>Total: $685</h5>
     </div>
-
+    <script src="scripts/budget.js"></script>
 </body>
 </html>
