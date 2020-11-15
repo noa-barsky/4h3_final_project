@@ -154,3 +154,12 @@
     text-align: center;
     border: 1px solid #000000;
 }
+
+.flexItem {
+  text-align: left;
+  flex-grow: 1;
+}
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+}

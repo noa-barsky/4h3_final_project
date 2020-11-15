@@ -8,6 +8,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 <body>
     
@@ -26,12 +27,29 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-    </div>
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to budget.ly!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae mi ex. Fusce fermentum eget dui ut consequat. Nam vel erat nec eros molestie tincidunt. Donec ac magna sit amet leo pharetra feugiat eget vitae felis. Donec lacinia ligula sit amet malesuada vulputate. Proin varius pretium feugiat.</p>
-      </div>
+    
 
+    <div class="flexBox">
+        <h2>Income Vs. Expenses</h2>
+        <button id="inVSexpButton" onClick="showChart('inVSexp','inVSexpButton')">Show</button>
+    </div>
+    <div id="inVSexp" style="display: none; width: 500px; height: 500px"></div>
+
+
+
+
+    <div class="flexBox">
+        <h2>Income Breakdown</h2>
+        <button id="incomeBreakdownButton" onClick="showChart('incomeBreakdown','incomeBreakdownButton')">Show</button>
+    </div>
+    <div style="display: none" id="incomeBreakdown" style="width: 500px; height: 500px"></div>
+
+    <div class="flexBox">
+        <h2>Expenses Breakdown</h2>
+        <button id="expBreakdownButton" onClick="showChart('expBreakdown','expBreakdownButton')">Show</button>
+    </div>
+    <div style="display: none" id="expBreakdown" style="width: 500px; height: 500px"></div>
+    
+    <script src="scripts/visualizations.js"></script>
 </body>
 </html>
