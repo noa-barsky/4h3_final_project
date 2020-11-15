@@ -27,9 +27,23 @@
             </div>
         </div>
     </nav>
-    <div class = "container">
-        <div id="curve_chart" style="width: 100%; height: 500px"></div>
+    
+
+    <div class="flexBox">
+        <h2>Income Vs. Expenses</h2>
+        <button id="inVSexpButton" onClick="showChart('inVSexp','inVSexpButton')">Show</button>
     </div>
+    <div id="inVSexp" style="visibility: hidden; width: 500px; height: 500px"></div>
+
+
+
+
+    <div class="flexBox">
+        <h2>Pie Chart</h2>
+        <button id="pieButton" onClick="showChart('piechart','pieButton')">Show</button>
+    </div>
+    <div style="visibility: hidden" id="piechart" style="width: 500px; height: 500px"></div>
+    
     <script src="scripts/visualizations.js"></script>
 </body>
 </html>
