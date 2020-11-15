@@ -33,16 +33,22 @@
         <h2>Income Vs. Expenses</h2>
         <button id="inVSexpButton" onClick="showChart('inVSexp','inVSexpButton')">Show</button>
     </div>
-    <div id="inVSexp" style="visibility: hidden; width: 500px; height: 500px"></div>
+    <div id="inVSexp" style="display: none; width: 500px; height: 500px"></div>
 
 
 
 
     <div class="flexBox">
-        <h2>Pie Chart</h2>
-        <button id="pieButton" onClick="showChart('piechart','pieButton')">Show</button>
+        <h2>Income Breakdown</h2>
+        <button id="incomeBreakdownButton" onClick="showChart('incomeBreakdown','incomeBreakdownButton')">Show</button>
     </div>
-    <div style="visibility: hidden" id="piechart" style="width: 500px; height: 500px"></div>
+    <div style="display: none" id="incomeBreakdown" style="width: 500px; height: 500px"></div>
+
+    <div class="flexBox">
+        <h2>Expenses Breakdown</h2>
+        <button id="expBreakdownButton" onClick="showChart('expBreakdown','expBreakdownButton')">Show</button>
+    </div>
+    <div style="display: none" id="expBreakdown" style="width: 500px; height: 500px"></div>
     
     <script src="scripts/visualizations.js"></script>
 </body>
