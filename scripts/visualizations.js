@@ -2,7 +2,8 @@ google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawInVSExp);
 google.charts.setOnLoadCallback(drawExpBreakdown);
 google.charts.setOnLoadCallback(drawIncomeBreakdown);
-
+google.charts.setOnLoadCallback(drawMotorcycleSavings);
+google.charts.setOnLoadCallback(drawWinterCoatSavings);
 
 function showChart(chart, button) {
   var chart = document.getElementById(chart);
@@ -54,7 +55,7 @@ function drawIncomeBreakdown() {
     slices: {
             0: { color: 'green' },
             1: { color: 'blue' }
-          },
+          }
   };
   var chart = new google.visualization.PieChart(document.getElementById('incomeBreakdown'));
   chart.draw(data, options);
@@ -76,5 +77,49 @@ function drawExpBreakdown() {
           }
   };
   var chart = new google.visualization.PieChart(document.getElementById('expBreakdown'));
+  chart.draw(data, options);
+}
+
+function drawMotorcycleSavings() {
+  var data = google.visualization.arrayToDataTable([
+    ['Item', 'Amount (in dollars)'],
+    ['Saved',  2000],
+    ['Remaining',  1500]
+  ]);
+  var options = {
+    legend: 'none',
+    pieSliceText: 'label',
+    pieStartAngle: 100,
+    pieSliceTextStyle: {
+            color: 'black',
+          },
+    slices: {
+            0: { color: 'green' },
+            1: { color: 'transparent' }
+          },
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('motorcycleSavings'));
+  chart.draw(data, options);
+}
+
+function drawWinterCoatSavings() {
+  var data = google.visualization.arrayToDataTable([
+    ['Item', 'Amount (in dollars)'],
+    ['Saved',  350],
+    ['Remaining',  150]
+  ]);
+  var options = {
+    legend: 'none',
+    pieSliceText: 'label',
+    pieStartAngle: 100,
+    pieSliceTextStyle: {
+            color: 'black',
+          },
+    slices: {
+            0: { color: 'green' },
+            1: { color: 'transparent' }
+          },
+  };
+  var chart = new google.visualization.PieChart(document.getElementById('winterCoatSavings'));
   chart.draw(data, options);
 }
