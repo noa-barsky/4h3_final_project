@@ -9,7 +9,7 @@ function showChart(chart, button) {
   var chart = document.getElementById(chart);
   var button = document.getElementById(button);
   if (chart.style.display == "none") {
-    chart.style.display = "inline-block";
+    chart.style.display = "contents";
     button.innerHTML = "Hide";
   } else {
     chart.style.display = "none";
@@ -28,11 +28,12 @@ function drawInVSExp() {
     pieSliceText: 'label',
     pieStartAngle: 100,
     slices: {
-            0: { color: 'green' },
-            1: { color: 'red' }
+            0: { color: '#82E6C2' },
+            1: { color: '#FF7F7F' }
           },
     pieSliceTextStyle: {
-            color: 'black',
+            color: '#4C4C4C',
+            fontSize: 15,
           }
   };
   var chart = new google.visualization.PieChart(document.getElementById('inVSexp'));
@@ -50,11 +51,12 @@ function drawIncomeBreakdown() {
     pieSliceText: 'label',
     pieStartAngle: 100,
     pieSliceTextStyle: {
-            color: 'black',
+            color: '#4C4C4C',
+            fontSize: 15,
           },
     slices: {
-            0: { color: 'green' },
-            1: { color: 'blue' }
+            0: { color: '#82E6C2' },
+            1: { color: '#C1C1FF' }
           }
   };
   var chart = new google.visualization.PieChart(document.getElementById('incomeBreakdown'));
@@ -73,8 +75,14 @@ function drawExpBreakdown() {
     pieSliceText: 'label',
     pieStartAngle: 100,
     pieSliceTextStyle: {
-            color: 'black',
-          }
+            color: '#4C4C4C',
+            fontSize: 15,
+          },
+    slices: {
+            0: { color: '#82E6C2' },
+            1: { color: '#C1C1FF' },
+            2: { color: '#FFC966'}
+        }
   };
   var chart = new google.visualization.PieChart(document.getElementById('expBreakdown'));
   chart.draw(data, options);
@@ -91,11 +99,12 @@ function drawMotorcycleSavings() {
     pieSliceText: 'label',
     pieStartAngle: 100,
     pieSliceTextStyle: {
-            color: 'black',
+            color: '#4C4C4C',
+            fontSize: 15,
           },
     slices: {
-            0: { color: 'green' },
-            1: { color: 'transparent' }
+            0: { color: '#82E6C2' },
+            1: { color: '#C1C1FF' }
           },
   };
   var chart = new google.visualization.PieChart(document.getElementById('motorcycleSavings'));
@@ -113,11 +122,12 @@ function drawWinterCoatSavings() {
     pieSliceText: 'label',
     pieStartAngle: 100,
     pieSliceTextStyle: {
-            color: 'black',
+            color: '#4C4C4C',
+            fontSize: 15,
           },
     slices: {
-            0: { color: 'green' },
-            1: { color: 'transparent' }
+            0: { color: '#82E6C2' },
+            1: { color: '#C1C1FF' }
           },
   };
   var chart = new google.visualization.PieChart(document.getElementById('winterCoatSavings'));

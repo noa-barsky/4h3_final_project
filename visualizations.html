@@ -12,56 +12,90 @@
 </head>
 <body>
     
-    <div class="header">
-       <a href='index.html'><img src="img/logo.jpeg" alt="..."></a>
-    </div>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="text-align: center;">
-            <div class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">budget.ly</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
             <a class="nav-link" href="budget.html">Budget</a>
+            </li>
+            <li class="nav-item active">
             <a class="nav-link" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item active">
             <a class="nav-link" href="tips.html">Tips</a>
+            </li>
+            <li class="nav-item active">
             <a class="nav-link" href="goals.html">Goals</a>
+            </li>
+            <li class="nav-item active">
             <a class="nav-link" href="visualizations.html">Visualizations</a>
+            </li>
+            </ul>
             </div>
-        </div>
     </nav>
     
+    <div class="visuals">
+        <div class="container">
+        <h1>Budget Visualizations</h1>
+        <div class="row">
+            <h4>Income vs. Expenses</h4>
+        </div>
+            <div style="display: none" id="inVSexp" class="graphDisplay"></div>
+        <div class="row">
+            <button type="button" class="btn btn-info" id="inVSexpButton" onclick="showChart('inVSexp','inVSexpButton')">Show</button>
+        </div>
+        <br>
+        
 
-    <div class="flexBox">
-        <h2>Income Vs. Expenses</h2>
-        <button id="inVSexpButton" onClick="showChart('inVSexp','inVSexpButton')">Show</button>
+            <div class="row">
+            <h4>Income Breakdown</h4>
+            </div>
+            <div style="display: none" id="incomeBreakdown" class="graphDisplay"></div>
+            <div class="row">
+            <button type="button" class="btn btn-info"  id="incomeBreakdownButton" onclick="showChart('incomeBreakdown','incomeBreakdownButton')">Show</button>
+            </div>
+            <br>
+        
+
+            <div class="row">
+            <h4>Expenses Breakdown</h4>
+            </div>
+            <div style="display: none" id="expBreakdown" class="graphDisplay"></div>
+            <div class="row">
+            <button type="button" class="btn btn-info"  id="expBreakdownButton" onclick="showChart('expBreakdown','expBreakdownButton')">Show</button>
+            </div>
+            <br>
+        
+
+            <div class="row">
+            <h4>Motorcycle Savings</h4>
+            </div>
+            <div style="display: none" id="motorcycleSavings" class="graphDisplay"></div>
+            <div class="row">
+            <button type="button" class="btn btn-info" id="motorcycleSavingsButton" onclick="showChart('motorcycleSavings','motorcycleSavingsButton')">Show</button>
+            </div>
+            <br>
+        
+        
+            <div class="row">
+            <h4>Winter Coat Savings</h4>
+            </div>
+            <div style="display: none" id="winterCoatSavings" class="graphDisplay"></div>
+            <div class="row">
+            <button type="button" class="btn btn-info" id="winterCoatSavingsButton" onclick="showChart('winterCoatSavings','winterCoatSavingsButton')">Show</button>
+            </div>
+            <br>
+        
     </div>
-    <div id="inVSexp" style="display: none; width: 500px; height: 500px"></div>
-
-
-
-
-    <div class="flexBox">
-        <h2>Income Breakdown</h2>
-        <button id="incomeBreakdownButton" onClick="showChart('incomeBreakdown','incomeBreakdownButton')">Show</button>
     </div>
-    <div style="display: none" id="incomeBreakdown" style="width: 500px; height: 500px"></div>
-
-    <div class="flexBox">
-        <h2>Expenses Breakdown</h2>
-        <button id="expBreakdownButton" onClick="showChart('expBreakdown','expBreakdownButton')">Show</button>
-    </div>
-    <div style="display: none" id="expBreakdown" style="width: 500px; height: 500px"></div>
-
-    <div class="flexBox">
-        <h2>Motorcycle Savings</h2>
-        <button id="motorcycleSavingsButton" onClick="showChart('motorcycleSavings','motorcycleSavingsButton')">Show</button>
-    </div>
-    <div style="display: none" id="motorcycleSavings" style="width: 500px; height: 500px"></div>
-    
-    <div class="flexBox">
-        <h2>Winter Coat Savings</h2>
-        <button id="winterCoatSavingsButton" onClick="showChart('winterCoatSavings','winterCoatSavingsButton')">Show</button>
-    </div>
-    <div style="display: none" id="winterCoatSavings" style="width: 500px; height: 500px"></div>
 
     <script src="scripts/visualizations.js"></script>
+    <footer>
+        © Connor & Noa 2020 🙃
+    </footer>
 </body>
 </html>
