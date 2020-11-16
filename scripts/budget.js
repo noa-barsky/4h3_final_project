@@ -3,7 +3,8 @@ let total = 0;
 function addRow(id) {
     let name = prompt("Name: ");
     let amount = prompt("Amount: ");
-    document.getElementById(`${id}`).innerHTML += rowTemplate(name, amount);
+    let date = prompt("Date: ");
+    document.getElementById(`${id}`).innerHTML += rowTemplate(name, amount, date);
     if (id === "incomeTable") {
         console.log("in income")
         if (amount.charAt(0) === "$") {
@@ -23,16 +24,10 @@ function addRow(id) {
     document.getElementById("budgetTotal").innerHTML = total
 }
 
-function rowTemplate(name, amount) {
-    // date code: https://tecadmin.net/get-current-date-time-javascript/
-
-    
-    let today = new Date();
-    let date = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear();
+function rowTemplate(name, amount, date) {
     return `<tr>
                 <td>${name}</td>
                 <td>${amount}</td>
                 <td>${date}</td>
             </tr>`;
-
 }

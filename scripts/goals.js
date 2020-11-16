@@ -1,8 +1,8 @@
 console.log("connected");
 function addGoal() {
     let goalName = document.getElementById('goalInputField').value;
-    let saved = prompt("Target amount: ");
-    let target = prompt("Amount saved: ");
+    let saved = prompt("Amount saved: ");
+    let target = prompt("Target amount: ");
     document.getElementById("goals").innerHTML += goalCardTemplate(goalName, saved, target);
 }
 
