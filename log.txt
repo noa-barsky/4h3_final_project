@@ -1,0 +1,155 @@
+commit 2195468b4116dc163f12c9c1ead6242f1ef05d64 (HEAD -> master, origin/master)
+Merge: 6c71cec d6a7d95
+Author: Noa Barsky <35268728+noa-barsky@users.noreply.github.com>
+Date:   Mon Nov 16 18:46:13 2020 -0500
+
+    Merge pull request #6 from noa-barsky/noa-barsky-patch-1
+    
+    Update budget.html
+
+commit d6a7d95a8cab223ce52886a95d5eb40451219db5 (origin/noa-barsky-patch-1)
+Author: Noa Barsky <35268728+noa-barsky@users.noreply.github.com>
+Date:   Mon Nov 16 18:45:59 2020 -0500
+
+    Update budget.html
+
+commit 6c71cec1f9757c6d9f2bff84bc0c1348e3ae719a
+Merge: 3febebb 70de7ae
+Author: Noa Barsky <35268728+noa-barsky@users.noreply.github.com>
+Date:   Mon Nov 16 18:39:13 2020 -0500
+
+    Merge pull request #5 from noa-barsky/noa-cleaning-up-design
+    
+    fixed some small bugs and overhauled the design
+
+commit 70de7ae6b2cb21a3c91fa443c8959387203780c9 (origin/noa-cleaning-up-design, noa-cleaning-up-design)
+Author: noa-barsky <barskyn@mcmaster.ca>
+Date:   Mon Nov 16 18:38:31 2020 -0500
+
+    fixed some small bugs and overhauled the design
+
+commit 3febebb48456720ffa9c855defe31319987e8043
+Merge: 02eaaf1 b7787cc
+Author: Connor Hewick <37413894+connorhewick@users.noreply.github.com>
+Date:   Sun Nov 15 19:56:53 2020 -0500
+
+    Merge pull request #4 from noa-barsky/connor-visualizations
+    
+    Connor visualizations
+
+commit b7787cc5d13ea6b2aa6bbccdf6884fb63e2d9cb4 (origin/connor-visualizations)
+Author: connorhewick <connor@hewick.ca>
+Date:   Sun Nov 15 19:55:24 2020 -0500
+
+    update index blurb
+
+commit 2919f69f29c4304a29fc27a9097ab3e845699f65
+Author: connorhewick <connor@hewick.ca>
+Date:   Sun Nov 15 19:25:49 2020 -0500
+
+    add graphs related to saving items
+
+commit 02eaaf1865b58612803a94c9cf925e21b5068e4e
+Merge: a0cdffe 8e431df
+Author: Connor Hewick <37413894+connorhewick@users.noreply.github.com>
+Date:   Sun Nov 15 18:51:42 2020 -0500
+
+    Merge pull request #3 from noa-barsky/connor-visualizations
+    
+    Connor visualizations
+
+commit 8e431dfdc9a1ab665cc943b5cd09292dc3dd4ec0
+Author: connorhewick <connor@hewick.ca>
+Date:   Sun Nov 15 18:50:39 2020 -0500
+
+    add hardcoded graphs with show/hide button
+
+commit 87a209602403e98c0b14c5a74d45321eba085dea
+Author: connorhewick <connor@hewick.ca>
+Date:   Sun Nov 15 18:35:00 2020 -0500
+
+    prelim graphs
+
+commit e3f0e760e7558761ab3ffba277768729f6897ab8
+Author: connorhewick <connor@hewick.ca>
+Date:   Sun Nov 15 18:01:38 2020 -0500
+
+    move calander and visualizations js to scripts folder
+
+commit 6e0aa807a00982423846053ef1c431bdd349cd7b
+Author: connorhewick <connor@hewick.ca>
+Date:   Sun Nov 15 17:44:27 2020 -0500
+
+    add visualizations to nav bar
+
+commit a0cdffee90a7e2416ec1cc173ebb02733e9c1695
+Merge: 9259156 e38756a
+Author: Noa Barsky <35268728+noa-barsky@users.noreply.github.com>
+Date:   Sun Nov 15 00:56:22 2020 -0500
+
+    Merge pull request #2 from noa-barsky/noa-budget-and-saving-crd
+    
+    Noa budget and saving crd
+
+commit e38756a45b9dbb31fedf440d86f97e8a1d2a2966 (origin/noa-budget-and-saving-crd, noa-budget-and-saving-crd)
+Author: noa-barsky <barskyn@mcmaster.ca>
+Date:   Sun Nov 15 00:55:35 2020 -0500
+
+    add total to budget
+
+commit 04fb9ca784112381789b7f8932e253480ba039af
+Author: noa-barsky <barskyn@mcmaster.ca>
+Date:   Sat Nov 14 23:24:22 2020 -0500
+
+    added ability to add rows to table, need to clacalculate the total and clean up prompts
+
+commit a1512100c5ae883591ca446498cbde77ee2ec795
+Author: noa-barsky <barskyn@mcmaster.ca>
+Date:   Sat Nov 14 22:59:27 2020 -0500
+
+    added the tips page
+
+commit 3f602dabccf89020f4eb8888a5eeabb373b22fe2
+Author: noa-barsky <barskyn@mcmaster.ca>
+Date:   Sat Nov 14 22:48:21 2020 -0500
+
+    Can now add goals when clicking add
+
+commit 92591565b0e06ece608940dd5e18fd91ff1e208c
+Author: connorhewick <connor@hewick.ca>
+Date:   Fri Nov 13 20:31:19 2020 -0500
+
+    remove category column
+
+commit 2c9cf5339c9cb9be3d6352b465d40c252cb5e3bd
+Author: connorhewick <connor@hewick.ca>
+Date:   Fri Nov 13 20:28:27 2020 -0500
+
+    hardcode calendar events with interactivity
+
+commit 6b2fbf7b995736fc9d9a8db330cc3f6030ae57a6
+Author: connorhewick <connor@hewick.ca>
+Date:   Fri Nov 13 17:40:40 2020 -0500
+
+    add date and category to budget tables
+
+commit 2c330e00e06dfda52d8c3fa3fd2d6f896ee21821
+Merge: d32b9a3 8b8d37d
+Author: Connor Hewick <37413894+connorhewick@users.noreply.github.com>
+Date:   Fri Nov 13 17:09:21 2020 -0500
+
+    Merge pull request #1 from noa-barsky/init-calendar
+    
+    hardcoded calendar
+
+commit 8b8d37d7825bc78fc00689ae2499e5950a4d83ef (origin/init-calendar)
+Author: connorhewick <connor@hewick.ca>
+Date:   Fri Nov 13 17:08:27 2020 -0500
+
+    hardcoded calendar
+
+commit d32b9a3d9c454fc0214585c274e233645dd24bc8
+Author: noa-barsky <barskyn@mcmaster.ca>
+Date:   Fri Nov 13 03:18:57 2020 -0500
+
+    initla commit

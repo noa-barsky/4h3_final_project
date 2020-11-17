@@ -1,0 +1,16 @@
+Noa:
+-Set-up github repo
+-Created the entire initial design including:
+    -navbar
+    -header
+    -budget page
+    -tip page
+    -goals page
+    -index page
+-Added functionality to budget, so users could add income/expense
+-Added functionality to goals, so users could add new goals
+-Overhauled the design in the second iteration to make it look 
+more sleek and professional
+-Fixed bugs with calendar and budget
+-Edited videos together
+Connor:
