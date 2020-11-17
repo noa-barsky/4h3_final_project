@@ -12,5 +12,10 @@ Noa:
 -Overhauled the design in the second iteration to make it look 
 more sleek and professional
 -Fixed bugs with calendar and budget
--Edited videos together
+
 Connor:
+- wrote user test instructions
+- built calendar view with events on dates and added functionality to show event details
+- built visualizations page and added functionality to show and hide graphs
+- wrote induction blurb on index page
+-Edited videos together
